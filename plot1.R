@@ -1,14 +1,8 @@
-
-library(lubridate)
-
 # Uncomment line below if data subset for plots not already
 # in working directory:
 # source(get_data.R)
 
 df = read.csv("subset_power_consumption.csv")
-
-df$Date = dmy(df$Date)
-df$Time = hms(df$Time)
 
 # Base plotting
 # Plot 1 - histogram ofGlobal Active Power
